@@ -1,0 +1,23 @@
+.container {
+  width: 75svw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+  border: 4px solid var(--gunmetal);
+  border-radius: 4px;
+  box-shadow: 4px 4px var(--safety-orange);
+  cursor: pointer;
+  padding: 1em;
+}
+
+.accountTitle {
+  margin: 0;
+  line-height: 1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 40svw;
+  }
+}

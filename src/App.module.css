@@ -1,5 +1,16 @@
 .buttonContainer {
   display: flex;
-  gap: 1em;
+  gap: 3em;
   justify-content: center;
+  background-color: var(--blue-gray);
+  padding-block: 2em;
+}
+
+.accountList {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 2em;
 }

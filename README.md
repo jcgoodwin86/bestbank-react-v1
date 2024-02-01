@@ -20,3 +20,11 @@
 --cadet-gray: hsla(180, 12%, 55%, 1);
 --paynes-gray: hsla(200, 32%, 40%, 1);
 --safety-orange: hsla(28, 99%, 50%, 1);
+
+Break Down of all components to build
+
+- TODO Main
+  - TODO Accounts List
+  - TODO Main Account Card
+  - TODO Expenses Card
+  - TODO Savings Card

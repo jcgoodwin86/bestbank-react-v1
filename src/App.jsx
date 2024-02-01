@@ -1,22 +1,21 @@
-/*
-  Break Down of all components to build
+import Header from "./components/Header/Header";
+import Button from "./components/Button/Button";
+import AccountCard from "./components/AccountCard/AccountCard";
+import accounts from "./data";
 
-  TODO Header
-    TODO Nav
-      TODO Links to pages
-  TODO Main
-    TODO Button to pay
-    TODO Button to transfer
-    TODO Accounts List
-      TODO Main Account Card
-      TODO Expenses Card
-      TODO Savings Card
-*/
-import Header from "./components/header/Header";
-import Button from "./components/button/Button";
 import styles from "./App.module.css";
 
 export default function App() {
+  const accountList = accounts.map((account) => {
+    return (
+      <AccountCard
+        key={account.id}
+        title={account.title}
+        balance={account.balance}
+      />
+    );
+  });
+
   return (
     <>
       <Header />
@@ -25,6 +24,10 @@ export default function App() {
           <Button>Pay</Button>
           <Button>Transfer</Button>
         </div>
+        <section className={styles.accountList}>
+          <h2>Accounts</h2>
+          {accountList}
+        </section>
       </main>
     </>
   );
