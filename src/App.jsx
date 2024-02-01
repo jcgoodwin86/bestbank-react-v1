@@ -13,12 +13,19 @@
       TODO Savings Card
 */
 import Header from "./components/header/Header";
+import Button from "./components/button/Button";
+import styles from "./App.module.css";
 
 export default function App() {
   return (
     <>
       <Header />
-      <p>Hello World!</p>
+      <main>
+        <div className={styles.buttonContainer}>
+          <Button>Pay</Button>
+          <Button>Transfer</Button>
+        </div>
+      </main>
     </>
   );
 }
