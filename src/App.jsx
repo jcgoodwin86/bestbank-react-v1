@@ -11,12 +11,13 @@
       TODO Main Account Card
       TODO Expenses Card
       TODO Savings Card
-
 */
+import Header from "./components/header/Header";
 
 export default function App() {
   return (
     <>
+      <Header />
       <p>Hello World!</p>
     </>
   );
