@@ -11,9 +11,9 @@
   box-shadow: 4px 4px var(--safety-orange);
   line-height: 1;
   text-align: start;
-  transition: 500ms;
+  transition: 300ms ease-in-out;
 }
 
 .button:hover {
-  transform: rotateX(180deg);
+  transform: scale(1.2) skew(15deg);
 }
