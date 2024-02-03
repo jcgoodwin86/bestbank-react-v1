@@ -2,7 +2,7 @@
 // It's used in App.js to display the spending list for each account.
 // It takes one prop: accounts.
 import PropTypes from "prop-types";
-import SpendingBar from "../SpendingBar/SpendingBar";
+import SpendingBar from "../SpendingBar/SpendingBar.jsx";
 import styles from "./SpendingList.module.css";
 
 export default function SpendingList({ accounts }) {

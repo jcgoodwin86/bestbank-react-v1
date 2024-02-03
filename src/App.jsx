@@ -1,8 +1,8 @@
-import Header from "./components/Header/Header";
-import Button from "./components/Button/Button";
-import AccountCard from "./components/AccountCard/AccountCard";
-import SpendingList from "./components/SpendingList/SpendingList";
-import accounts from "./data";
+import Header from "./components/Header/Header.jsx";
+import Button from "./components/Button/Button.jsx";
+import AccountCard from "./components/AccountCard/AccountCard.jsx";
+import SpendingList from "./components/SpendingList/SpendingList.jsx";
+import accounts from "./data.js";
 import styles from "./App.module.css";
 
 export default function App() {
