@@ -24,13 +24,15 @@ export default function App() {
           <Button>Pay</Button>
           <Button>Transfer</Button>
         </div>
-        <section className={styles.accountList}>
-          <h2>Accounts</h2>
-          {accountList}
-        </section>
-        <section className={styles.barList}>
-          <SpendingList accounts={accounts} />
-        </section>
+        <div className={styles.listContainer}>
+          <section className={styles.accountList}>
+            <h2>Accounts</h2>
+            {accountList}
+          </section>
+          <section className={[styles.barList, styles.diagonal].join(" ")}>
+            <SpendingList accounts={accounts} />
+          </section>
+        </div>
       </main>
     </>
   );

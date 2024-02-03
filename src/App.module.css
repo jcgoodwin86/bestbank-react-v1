@@ -5,6 +5,12 @@
   padding-block: 2em;
 }
 
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .barList,
 .accountList {
   display: flex;
@@ -13,10 +19,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 4em;
+  width: 100%;
 }
 
 .barList {
-  background-color: var(--gunmetal);
   padding-inline: 2em;
 }
 
@@ -35,4 +41,10 @@
   z-index: -1;
   inset: 0;
   transform: skewY(var(--skew-angle));
+}
+
+@media (min-width: 769px) {
+  .listContainer {
+    flex-direction: row;
+  }
 }

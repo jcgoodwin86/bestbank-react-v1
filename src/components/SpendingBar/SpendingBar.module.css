@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  height: 3em;
+}
+
+.bar {
+  height: 3em;
+  background-color: #f7f7f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1em;
+
+  border: 4px solid var(--gunmetal);
+  border-radius: 0.5em;
+  box-shadow: 4px 4px var(--gunmetal);
+}

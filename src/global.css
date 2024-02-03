@@ -48,13 +48,6 @@ h6 {
 /* Colors */
 
 :root {
-  /* CSS HEX */
-  --blue-gray: #5b9dd4ff;
-  --gunmetal: #0f3445ff;
-  --cadet-gray: #7e9a9aff;
-  --paynes-gray: #467187ff;
-  --safety-orange: #fe7801ff;
-
   /* CSS HSL */
   --blue-gray: hsla(207, 58%, 59%, 1);
   --gunmetal: hsla(199, 64%, 16%, 1);
