@@ -2,15 +2,37 @@
   display: flex;
   gap: 3em;
   justify-content: center;
-  background-color: var(--blue-gray);
   padding-block: 2em;
 }
 
+.barList,
 .accountList {
   display: flex;
   gap: 2em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: 2em;
+  padding-bottom: 4em;
+}
+
+.barList {
+  background-color: var(--gunmetal);
+  padding-inline: 2em;
+}
+
+.diagonal {
+  --skew-angle: -2deg;
+  --background: linear-gradient(45deg, var(--paynes-gray), var(--blue-gray));
+
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  content: "";
+  background: var(--background);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(var(--skew-angle));
 }
