@@ -1,3 +1,5 @@
+// Header component contains the logo and the navigation menu.
+// It is used in App.js to display the header of the application.
 import styles from "./Header.module.css";
 
 export default function Header() {

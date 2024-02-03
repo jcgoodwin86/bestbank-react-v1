@@ -6,6 +6,7 @@ import accounts from "./data";
 import styles from "./App.module.css";
 
 export default function App() {
+  // Map over the accounts and create an AccountCard for each account
   const accountList = accounts.map((account) => {
     return (
       <AccountCard
