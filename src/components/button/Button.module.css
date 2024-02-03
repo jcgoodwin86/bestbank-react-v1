@@ -12,8 +12,9 @@
   line-height: 1;
   text-align: start;
   transition: 300ms ease-in-out;
+  transform: skew(-2deg) rotate(-2deg);
 }
 
 .button:hover {
-  transform: scale(1.2) skew(15deg);
+  transform: scale(1.2) skew(-2deg) rotate(-2deg);
 }

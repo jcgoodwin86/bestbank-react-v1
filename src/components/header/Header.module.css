@@ -51,7 +51,7 @@
 }
 
 .buttonLikeLink:hover {
-  transform: scale(1.2) skew(-15deg);
+  transform: scale(1.2) skew(-2deg) rotate(-2deg);
 }
 
 .activeButton {
