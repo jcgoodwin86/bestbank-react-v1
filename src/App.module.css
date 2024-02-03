@@ -1,0 +1,50 @@
+.buttonContainer {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  padding-block: 2em;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barList,
+.accountList {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+  width: 100%;
+}
+
+.barList {
+  padding-inline: 2em;
+}
+
+.diagonal {
+  --skew-angle: -2deg;
+  --background: linear-gradient(45deg, var(--paynes-gray), var(--blue-gray));
+
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  content: "";
+  background: var(--background);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(var(--skew-angle));
+}
+
+@media (min-width: 769px) {
+  .listContainer {
+    flex-direction: row;
+  }
+}

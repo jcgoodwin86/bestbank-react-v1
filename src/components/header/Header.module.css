@@ -2,27 +2,29 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 .titleContainer {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   gap: 1em;
   margin-block: 1em;
+  padding-left: 1em;
 }
 
 .logo {
-  height: 3em;
-  border-radius: 50%;
+  height: 2em;
 }
 
 .title {
+  font-size: var(--text-size-500);
   margin-block: 0;
   margin-right: 1.2em;
   letter-spacing: 1px;
-  text-align: end;
   line-height: 1;
+  text-align: center;
 }
 
 .menu-list {
@@ -46,11 +48,11 @@
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 1px 1px rgba(0, 0, 0);
-  transition: 500ms;
+  transition: 300ms ease-in-out;
 }
 
 .buttonLikeLink:hover {
-  transform: rotateX(180deg);
+  transform: scale(1.2) skew(-2deg) rotate(-2deg);
 }
 
 .activeButton {
@@ -58,4 +60,26 @@
   box-shadow: 2px 2px var(--safety-orange);
   color: var(--safety-orange);
   font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .menu-list {
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .buttonLikeLink {
+    font-size: var(--text-size-300);
+    border: 4px solid var(--gunmetal);
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 4px 4px var(--gunmetal);
+  }
+
+  .activeButton {
+    border: 4px solid var(--safety-orange);
+    box-shadow: 4px 4px var(--safety-orange);
+    color: var(--safety-orange);
+    font-weight: 700;
+  }
 }

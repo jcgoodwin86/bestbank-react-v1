@@ -1,0 +1,15 @@
+.title {
+  color: white;
+}
+
+.barList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.barText {
+  font-size: var(--text-size-200);
+  font-weight: 700;
+}

@@ -1,14 +1,12 @@
+// Header component contains the logo and the navigation menu.
+// It is used in App.js to display the header of the application.
 import styles from "./Header.module.css";
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.titleContainer}>
-        <img
-          className={styles.logo}
-          src="img/BestBankLogo.png"
-          alt="best bank logo"
-        />
+        <img className={styles.logo} src="img/logo.svg" alt="best bank logo" />
         <h1 className={styles.title}>Best Bank</h1>
       </div>
       <div className={styles["menu-list"]}>
