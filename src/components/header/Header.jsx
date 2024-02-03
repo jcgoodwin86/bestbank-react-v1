@@ -4,11 +4,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.titleContainer}>
-        <img
-          className={styles.logo}
-          src="img/BestBankLogo.png"
-          alt="best bank logo"
-        />
+        <img className={styles.logo} src="img/logo.svg" alt="best bank logo" />
         <h1 className={styles.title}>Best Bank</h1>
       </div>
       <div className={styles["menu-list"]}>
